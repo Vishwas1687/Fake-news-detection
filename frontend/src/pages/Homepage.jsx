@@ -4,7 +4,7 @@ const Homepage = () => {
   return (
     <div>
       <Layout type="mainHeading">
-        
+          Hi
       </Layout>
     </div>
   );

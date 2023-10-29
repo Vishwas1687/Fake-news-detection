@@ -28,7 +28,7 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <Link to='/' className="navbar-brand" href="#">LeetCode
+                    <Link to='/' className="navbar-brand" href="#">News Feed
                     </Link>
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         {/* <li className="nav-item">    
@@ -43,6 +43,13 @@ const Header = () => {
                             <button onClick={()=>{setType('login');setOpen(true)}} class="btn btn-warning" style={{"color":"white","marginLeft":"3px"}}>Login</button>
                         {/* <NavLink to='/login' className="nav-link" href="#">Login</NavLink> */}
                         </li></>):(<>
+                        <li className="nav-item">
+                            <NavLink href="#" className="nav-link" to='/create-post'>
+                                <button className='btn btn-primary'>
+                                     Create Post
+                                </button>
+                            </NavLink>
+                        </li>
                         <li className="nav-item">
                             <NavLink href="#" className="nav-link">
                                 {auth?.user?.username}
