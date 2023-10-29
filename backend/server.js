@@ -14,6 +14,7 @@ const multer = require('multer');
 
 
 
+
 const userRoutes=require('./routes/UserRoutes')
 const postRoutes=require('./routes/PostRoutes')
 
@@ -30,6 +31,7 @@ connect.then((db) => {
 
 
 //middlewares
+app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.json())
 //express.json is used to parse the request bodies of POST request
 
