@@ -92,9 +92,6 @@ const loginController = async(req,res)=>{
         },
         token:token
     })
-    res.send({
-      message:'Nothing'
-    })
   }
   catch(error){
     res.status(404).send({
